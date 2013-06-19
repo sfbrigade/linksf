@@ -1,0 +1,28 @@
+div.timeclick ul {
+  margin-right: 10px;
+  display: inline-block; }
+div.timeclick label {
+  font-size: 8pt; }
+div.timeclick li.tp_timebox {
+  display: inline-block;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  background-color: #99cccc;
+  border: 2px solid #264a59;
+  text-align: center;
+  font-weight: bold;
+  cursor: default;
+  -moz-border-radius: 3px;
+  border-radius: 3px; }
+  div.timeclick li.tp_timebox:hover {
+    background-color: #77bbbb; }
+  div.timeclick li.tp_timebox p {
+    vertical-align: middle;
+    color: #333333;
+    line-height: 65%; }
+  div.timeclick li.tp_timebox.tp_selected {
+    background-color: #509797; }
+div.timeclick .tp_spacer {
+  margin-bottom: 0px; }
+div.timeclick br {
+  clear: both; }

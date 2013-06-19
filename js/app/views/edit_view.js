@@ -115,6 +115,9 @@ var EditView = Backbone.View.extend({
     });
     $(this.el).html(this.template({facility: templateData}));
     this.setupForm();
+
+    $('#timeclick').timeclick();
+
     return this;
   }
 });
