@@ -56,10 +56,10 @@
     {{#each services}}
       <p class="title">{{name}}</p>
       <div class="inset-services">
+        <label>Hours:</label>
+          {{> openHours}}      
         <label>Description:</label>
         <p>{{description}}</p>
-        <label>Hours:</label>
-          {{> openHours}}
         {{#if notes}}
           <label>Notes:</label>
          <p>{{notes}}</p>
