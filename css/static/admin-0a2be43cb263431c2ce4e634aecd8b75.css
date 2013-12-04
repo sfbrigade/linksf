@@ -1,0 +1,350 @@
+@charset "UTF-8";
+.inset {
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #DDD;
+  padding: 10px;
+  cursor: pointer; }
+
+.unselectable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none; }
+
+li {
+  list-style-type: none; }
+
+.title {
+  margin: 12px 0 0 1px;
+  color: #666;
+  font-size: 18px; }
+
+.facility-list {
+  margin: 0; }
+  .facility-list .facility {
+    border-bottom: solid #9B9B9B 1px;
+    padding: 10px; }
+
+.facility-services {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: capitalize; }
+  .facility-services i {
+    margin: 0 2px 0; }
+
+.right {
+  float: right; }
+
+.open-hours {
+  padding: 5px 10px;
+  font-size: 14px; }
+  .open-hours .label-hour {
+    padding-right: 10px;
+    text-align: right; }
+
+#errorMessages {
+  background-color: #F7D6D6;
+  border: 2px solid #C95F5F;
+  width: 327px;
+  margin: 10px 0 20px 70px;
+  padding-top: 10px;
+  border-radius: 4px;
+  color: #C95F5F;
+  display: none; }
+
+.controls {
+  margin-top: 55px;
+  margin-bottom: 0px;
+  height: 20px; }
+
+@font-face {
+  font-family: 'icons';
+  src: url("../../vendor/font/icons.eot?37579567");
+  src: url("../../vendor/font/icons.eot?37579567#iefix") format("embedded-opentype"), url("../../vendor/font/icons.woff?37579567") format("woff"), url("../../vendor/font/icons.ttf?37579567") format("truetype"), url("../../vendor/font/icons.svg?37579567#icons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'icons';
+    src: url('../font/icons.svg?37579567#icons') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.icon-down-open:before {
+  content: '\e80b'; }
+
+/* '' */
+.icon-link:before {
+  content: '\e80c'; }
+
+/* '' */
+.icon-angle-double-right:before {
+  content: '\e80a'; }
+
+/* '' */
+.icon-desktop:before {
+  content: '\e805'; }
+
+/* '' */
+.icon-food:before {
+  content: '\e806'; }
+
+/* '' */
+.icon-home:before {
+  content: '\e803'; }
+
+/* '' */
+.icon-right-open:before {
+  content: '\e804'; }
+
+/* '' */
+.icon-phone:before {
+  content: '\e800'; }
+
+/* '' */
+.icon-right-open-1:before {
+  content: '\e808'; }
+
+/* '' */
+.icon-droplet:before {
+  content: '\e802'; }
+
+/* '' */
+.icon-right-open-outline:before {
+  content: '\e809'; }
+
+/* '' */
+.icon-plus:before {
+  content: '\e807'; }
+
+/* '' */
+.icon-compass:before {
+  content: '\e801'; }
+
+/* '' */
+.admin-filter {
+  width: 100%;
+  background: #EDEDED;
+  margin: 0 auto; }
+  .admin-filter ul {
+    margin: 4px 0 4px 0; }
+    .admin-filter ul li {
+      display: inline;
+      float: left; }
+  .admin-filter span {
+    padding-left: 5px; }
+  .admin-filter i.category-icon {
+    margin-right: 8px; }
+
+#linksf {
+  padding-top: 40px; }
+
+.navbar #search-form ul.nav li.search-input {
+  line-height: 40px; }
+  .navbar #search-form ul.nav li.search-input input {
+    margin-bottom: 0; }
+
+.facility-list {
+  padding-top: 10px; }
+  .facility-list .not-found {
+    margin: 10px; }
+
+#facilityForm .hours .dayError, #facilityForm .address-preview.error {
+  color: red; }
+
+.service-edit-row {
+  margin: 0 20px 20px 0;
+  border-color: #DDDDDD;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px; }
+  .service-edit-row .hours .day {
+    margin-right: 10px; }
+  .service-edit-row .hours .label-hour {
+    padding-right: 10px;
+    text-align: right; }
+  .service-edit-row .hours #preview_label {
+    vertical-align: top; }
+
+.service-edit-row div {
+  margin: 5px; }
+
+.service-edit-row label {
+  font-color: #333333; }
+
+#login {
+  margin-top: 20px; }
+
+#loginError {
+  display: none; }
+
+#delete_facility {
+  background-color: #52000A;
+  color: #FFFFFF; }
+
+.clear {
+  clear: both; }
+
+/*! normalize.css v2.1.0 | MIT License | git.io/normalize */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:active, a:hover {
+  outline: 0; }
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: bold; }
+
+dfn {
+  font-style: italic; }
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code, kbd, pre, samp {
+  font-family: monospace,serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre-wrap; }
+
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 0; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+legend {
+  border: 0;
+  padding: 0; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0; }
+
+button, input {
+  line-height: normal; }
+
+button, select {
+  text-transform: none; }
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
