@@ -12,7 +12,7 @@ Handlebars.registerPartial("queryRepresentation", require('templates/_query_repr
 
 $(function() {
   require('fastclick')(document.body);
-
+  require('lib/boot');
   var Parse = require('parse');
 
   Parse.initialize("Z2l0Zn6NGrHCDoBPKUeD7Tf1fAUDaazQihQFqnL8", "kGPp7cydleuFbhKB4mrviTmbIjrbTjhxGP4dP7Ls");

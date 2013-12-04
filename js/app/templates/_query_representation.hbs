@@ -1,12 +1,20 @@
 <div class="query-representation">
   <div class="query-representation-content">
+  {{#ifMultiple searchParams}}
+    {{#each searchParams}}
+      <i class="list-header-item category-icon icon-{{icon}}"></i>
+    {{/each}}
+  {{else}}
     {{#each searchParams}}
       <i class="list-header-item category-icon icon-{{icon}}"></i>
       <span>{{title}} </span>
-    {{/each}}
+    {{/each}}    
+  {{/ifMultiple}}
+  
     {{^searchParams}}
       <i class="list-header-item category-icon icon-th"></i>
       <span>All </span>
     {{/searchParams}}
+    <div class="more-options"><p>More Options >></p></div>
   </div>
 </div>
