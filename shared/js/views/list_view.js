@@ -32,7 +32,7 @@ function generateQueryParams(queryString, limit ) {
     queryParams.sort = params.sort;
   }
 
-  if (params.hours === 'open') {
+  if (params.hours !== 'all') {
     filterParams.open = true;
   }
 

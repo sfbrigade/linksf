@@ -113,7 +113,7 @@ var FilterView = Backbone.View.extend({
     sort = this.$(".filter-sort .btn.active").data("value");
 
     hours = this.$(".filter-hours .btn.active").data("value");
-    if (hours == "A") { hours = null; }
+    if (hours == "A") { hours = "all"; }
 
     navigate({
       categories:   categories,

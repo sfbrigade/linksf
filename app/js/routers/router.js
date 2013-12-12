@@ -48,7 +48,8 @@ var Router = Backbone.Router.extend({
     fetchLocation().always(function(loc) {
       var queryParams = this.listView.generateQueryParams(queryString);
 
-      queryParams.limit = 20,
+      queryParams.limit = 20;
+
       this.listView.options.categories = queryParams.filter.categories || [];
 
       if (loc.lon && loc.lat) {
